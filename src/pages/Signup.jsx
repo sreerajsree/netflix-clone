@@ -12,7 +12,7 @@ const Signup = () => {
   const navigate = useNavigate();
 
   //handling form submission
-  const handleSubmit = async (e) => {
+  const handleRegister = async (e) => {
     e.preventDefault();
     try {
       await signUp(email, password);
@@ -35,7 +35,7 @@ const Signup = () => {
             <div className="max-w-[320px] mx-auto py-16">
               <h1 className="text-3xl font-bold">Sign Up</h1>
               <form
-                onSubmit={handleSubmit}
+                onSubmit={handleRegister}
                 className="w-full flex flex-col py-4"
               >
                 <input
