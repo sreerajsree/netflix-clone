@@ -2,11 +2,14 @@ import React from "react";
 import NetflixLogo from "../logo/netflix.png";
 import { TbWorld } from "react-icons/tb";
 import { AiFillCaretDown } from "react-icons/ai";
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
   return (
     <div className="flex items-center justify-between p-4 md:p-10 z-[100] absolute w-full">
+      <Link to="/">
       <img src={NetflixLogo} alt="Netflix-logo" className="h-8 md:h-12" />
+      </Link>
       <div className="flex">
         <div className="relative md:inline-flex text-white hidden">
           <TbWorld className="absolute top-[13px] left-1 w-5 h-5" />
@@ -16,10 +19,14 @@ const NavBar = () => {
             <option className="bg-gray-700">Hindi</option>
           </select>
         </div>
+        <Link to="/signup">
         <button className="text-white ml-4 border border-white rounded-sm px-3 md:px-6 py-1 md:py-2 text-sm md:text-base">Sign Up</button>
+        </Link>
+        <Link to="login">
         <button className="bg-red-600 text-white px-3 md:px-6 py-1 md:py-2 rounded ml-6 text-sm md:text-base">
           Sign In
         </button>
+        </Link>
       </div>
     </div>
   );
