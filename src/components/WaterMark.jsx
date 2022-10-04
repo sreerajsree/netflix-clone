@@ -28,7 +28,7 @@ const WaterMark = () => {
               href="https://sreerajsree.vercel.app/"
             >
               {" "}
-              Seeraj S
+              Sreeraj S
             </a>
           </p>
           <button onClick={() => bannerClose(false)} className="text-white text-xl absolute top-0 right-8 font-bold">x</button>
